@@ -1,0 +1,78 @@
+$styles: intro;
+.#{$styles} {
+  height: 80vh;
+  background: url(../img/tech3_resize.jpg) center center;
+  background-size: cover;
+  padding-top: 220px;
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+  }
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__subtitle--top {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__subtitle--bottom {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin-bottom: 53px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__link {
+    width: 160px;
+    height: 45px;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 1.2em;
+    line-height: 1em;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    &:hover {
+      border-color: hsla(0, 0%, 100%, 0.8);
+      background-color: hsla(0, 0%, 100%, 0.15);
+      outline: 0;
+      text-decoration: none;
+      color: hsla(0, 0%, 100%, 0.8);
+    }
+  }
+}
